@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>أم رؤى | دروس خصوصية للطالبات — المنهج السعودي</title>
+<meta name="description" content="دروس خصوصية للطالبات في المرحلة المتوسطة والثانوية، والقدرات والتحصيلي، ومواد جامعية مختارة. شرح هادئ ومتابعة فردية تبني الفهم والثقة.">
+<meta name="theme-color" content="#FBF8F8">
+<meta property="og:title" content="أم رؤى | الفهم أولًا، والتميّز نتيجة">
+<meta property="og:description" content="دروس خصوصية للطالبات وفق المنهج السعودي، بمتابعة فردية وبيئة هادئة.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   أم رؤى — هوية بصرية
+   الألوان: حبر بنفسجي عميق / بورسلان وردي / خزامى / عنّابي
+   الخطوط: Amiri للعناوين — IBM Plex Sans Arabic للنصوص
+   ============================================================ */
+:root{
+  --ink:#241A2B;
+  --ink-2:#5F5169;
+  --porcelain:#FBF8F8;
+  --blush:#F3E8EA;
+  --blush-deep:#EADCE0;
+  --line:#E4D5DA;
+  --garnet:#94304A;
+  --garnet-deep:#6F2038;
+  --wa:#0F7A66;
+
+  --shell:min(1140px, 100%);
+  --gutter:clamp(20px, 5vw, 44px);
+  --pad-section:clamp(64px, 10vw, 132px);
+  --r-arch:clamp(110px, 26vw, 210px);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--porcelain);
+  color:var(--ink);
+  font-family:"IBM Plex Sans Arabic", system-ui, sans-serif;
+  font-size:clamp(16px, 1.6vw, 17.5px);
+  font-weight:300;
+  line-height:1.95;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:"Amiri", Georgia, serif;font-weight:700;line-height:1.45;margin:0;letter-spacing:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+.shell{width:var(--shell);margin-inline:auto;padding-inline:var(--gutter)}
+.section{padding-block:var(--pad-section)}
+.measure{max-width:56ch}
+
+/* ---------- الترويسة ---------- */
+.site-head{
+  position:sticky;top:0;z-index:40;
+  background:color-mix(in srgb, var(--porcelain) 88%, transparent);
+  backdrop-filter:saturate(1.2) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .35s ease, background .35s ease;
+}
+.site-head[data-stuck="true"]{border-bottom-color:var(--line)}
+.head-row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:16px}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand-name{font-family:"Amiri",serif;font-size:1.5rem;font-weight:700}
+.brand-tag{display:none;font-size:.72rem;color:var(--ink-2);letter-spacing:.02em}
+@media (min-width:560px){.brand-tag{display:inline}}
+.nav{display:none;gap:30px;font-size:.95rem}
+.nav a{text-decoration:none;color:var(--ink-2);position:relative;padding-block:4px;transition:color .25s ease}
+.nav a::after{content:"";position:absolute;inset-inline-start:0;bottom:0;height:1px;width:0;background:var(--garnet);transition:width .3s ease}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after{width:100%}
+
+/* ---------- الأزرار ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:inherit;font-size:1rem;font-weight:500;
+  padding:14px 26px;border-radius:999px;text-decoration:none;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn svg{width:19px;height:19px;flex:none}
+.btn-main{background:var(--garnet);color:#fff}
+.btn-main:hover{background:var(--garnet-deep);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:transparent}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-light{background:#fff;color:var(--garnet)}
+.btn-light:hover{transform:translateY(-2px)}
+.btn-sm{padding:10px 18px;font-size:.9rem}
+:focus-visible{outline:2px solid var(--garnet);outline-offset:3px;border-radius:6px}
+
+/* ---------- إطار القوس ---------- */
+.arch{position:relative}
+.arch img{
+  width:100%;height:100%;object-fit:cover;
+  border-radius:var(--r-arch) var(--r-arch) 14px 14px;
+}
+.arch::before{
+  content:"";position:absolute;inset:-14px;
+  border:1px solid var(--line);
+  border-radius:calc(var(--r-arch) + 14px) calc(var(--r-arch) + 14px) 16px 16px;
+  pointer-events:none;
+}
+
+/* ---------- الواجهة: غلاف إعلاني كامل ---------- */
+.hero{padding:0}
+.hero-cover{
+  position:relative;
+  margin-inline:clamp(10px,2vw,22px);
+  min-height:660px;
+  min-height:clamp(620px, 93svh, 980px);
+  display:flex;align-items:flex-end;
+  overflow:hidden;
+  background:var(--blush-deep);
+  border-radius:clamp(90px,26vw,240px) clamp(90px,26vw,240px) 22px 22px;
+}
+.hero-cover img{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:52% 28%;
+  transform-origin:52% 40%;
+}
+.loaded .hero-cover img{animation:coverIn 11s cubic-bezier(.2,.6,.3,1) both}
+@keyframes coverIn{from{transform:scale(1.09)}to{transform:scale(1)}}
+.hero-cover::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(to top,
+    rgba(24,15,28,.90) 0%,
+    rgba(24,15,28,.72) 26%,
+    rgba(24,15,28,.34) 52%,
+    rgba(24,15,28,.10) 72%,
+    rgba(24,15,28,.26) 100%);
+}
+.hero-inner{
+  position:relative;z-index:2;width:100%;
+  max-width:var(--shell);margin-inline:auto;
+  color:#FBF5F6;
+  padding:clamp(34px,8vw,70px) clamp(24px,6vw,60px) clamp(36px,8vw,74px);
+}
+.kicker{
+  font-size:.86rem;color:#EFD3DA;margin-bottom:20px;
+  display:flex;align-items:center;gap:12px;
+}
+.kicker::before{content:"";width:34px;height:1px;background:#EFD3DA;opacity:.7}
+.hero-cover h1{
+  font-size:clamp(2.15rem, 8.6vw, 4rem);
+  line-height:1.6;color:#fff;margin-bottom:6px;
+  max-width:min(100%, 19ch);
+  text-shadow:0 3px 26px rgba(18,10,22,.55);
+}
+.hero-lead{
+  font-size:clamp(.98rem,2.3vw,1.14rem);
+  color:rgba(255,255,255,.88);max-width:44ch;
+  text-shadow:0 2px 16px rgba(18,10,22,.45);
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-note{margin-top:20px;font-size:.85rem;color:rgba(255,255,255,.72)}
+.btn-outline-light{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-outline-light:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
+.hero-badge{
+  position:absolute;z-index:2;top:clamp(26px,7vw,54px);inset-inline-start:clamp(24px,6vw,60px);
+  display:inline-flex;align-items:center;gap:11px;
+  background:rgba(196,32,48,.92);backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.34);
+  padding:11px 22px;border-radius:999px;
+  font-size:clamp(.86rem,2.4vw,.98rem);font-weight:500;color:#fff;
+  letter-spacing:.01em;
+  box-shadow:0 10px 30px rgba(150,16,32,.38);
+}
+.hero-badge::before{
+  content:"";width:8px;height:8px;border-radius:50%;background:#fff;flex:none;
+  animation:badgePulse 2.8s ease-out infinite;
+}
+@keyframes badgePulse{
+  0%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}
+  70%{box-shadow:0 0 0 10px rgba(255,255,255,0)}
+  100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}
+}
+
+.tracks-strip{
+  margin-top:clamp(34px,6vw,52px);padding-top:26px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.93rem;color:var(--ink-2);
+}
+.tracks-strip span{display:inline-flex;align-items:center;gap:9px}
+.tracks-strip span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--garnet);opacity:.65}
+
+/* ---------- عناوين الأقسام ---------- */
+.sec-head{margin-bottom:clamp(38px,6vw,58px)}
+.sec-head h2{font-size:clamp(1.85rem,4.6vw,2.7rem);margin-bottom:16px}
+.sec-head p{color:var(--ink-2);max-width:52ch}
+
+/* ---------- عن أم رؤى ---------- */
+.about-grid{display:grid;gap:clamp(40px,6vw,70px);align-items:center}
+.about-media{aspect-ratio:1/1;max-width:460px;width:100%;margin-inline:auto}
+.about-text p + p{margin-top:20px;color:var(--ink-2)}
+.years{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:"Amiri",serif;font-size:clamp(1.15rem,3.4vw,1.42rem);font-weight:700;
+  color:var(--garnet);
+  background:var(--blush);
+  border:1px solid var(--blush-deep);
+  padding:12px 24px;border-radius:999px;
+  margin-bottom:8px;
+}
+.years::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--garnet)}
+.about-text .years + p{margin-top:20px}
+.pillars{margin-top:36px;display:grid;gap:18px}
+.pillars li{padding-inline-start:20px;border-inline-start:2px solid var(--blush-deep);line-height:1.75}
+.pillars b{font-weight:500;font-family:"Amiri",serif;font-size:1.12rem}
+.pillars span{display:block;color:var(--ink-2);font-size:.95rem}
+
+/* ---------- الخدمات ---------- */
+.services{display:grid}
+.service{
+  display:grid;gap:6px 34px;padding-block:26px;border-top:1px solid var(--line);
+  transition:background .3s ease;
+}
+.services .service:last-child{border-bottom:1px solid var(--line)}
+.service h3{font-size:1.3rem}
+.service p{color:var(--ink-2);font-size:.98rem;line-height:1.8}
+.service-note{font-size:.85rem;color:var(--garnet);margin-top:8px}
+
+/* ---------- حصص ودورات جاهزة ---------- */
+.courses-grid{display:grid;gap:16px}
+.course{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:26px 24px 24px;
+  transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.course:hover{transform:translateY(-3px);border-color:var(--blush-deep);box-shadow:0 16px 40px -26px rgba(36,26,43,.45)}
+.course h3{font-size:1.16rem;margin-bottom:8px}
+.course p{color:var(--ink-2);font-size:.93rem;margin-bottom:20px}
+.courses-cta{margin-top:clamp(30px,5vw,42px)}
+
+/* ---------- لماذا أم رؤى ---------- */
+.why{background:var(--blush)}
+.why-grid{display:grid;gap:clamp(30px,5vw,46px)}
+.why-item{padding-top:24px;border-top:1px solid var(--blush-deep)}
+.why-item h3{font-size:1.25rem;margin-bottom:10px}
+.why-item p{color:var(--ink-2);font-size:.97rem}
+
+/* ---------- بيئة الدراسة: صورة واحدة ---------- */
+.env-solo{--r-arch:clamp(120px,30vw,280px)}
+.env-solo img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+
+/* ---------- آراء ---------- */
+.quotes{display:grid;gap:34px}
+.quote{border-inline-start:2px solid var(--blush-deep);padding-inline-start:22px}
+.quote p{font-family:"Amiri",serif;font-size:1.22rem;line-height:1.85}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-size:.86rem;color:var(--ink-2)}
+.quotes-note{margin-top:34px;font-size:.84rem;color:var(--ink-2)}
+
+/* ---------- الأسئلة ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding-block:24px;
+  font-family:"Amiri",serif;font-size:1.16rem;font-weight:700;
+  display:flex;align-items:flex-start;justify-content:space-between;gap:20px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"";flex:none;width:11px;height:11px;margin-top:12px;
+  border-inline-end:1.5px solid var(--garnet);border-bottom:1.5px solid var(--garnet);
+  transform:rotate(45deg);transition:transform .3s ease;
+}
+.faq details[open] summary::after{transform:rotate(-135deg)}
+.faq-body{padding-bottom:26px;color:var(--ink-2);max-width:60ch}
+.faq details[open] .faq-body{animation:reveal .4s ease both}
+@keyframes reveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+
+/* ---------- الدعوة للتواصل ---------- */
+.cta{background:var(--ink);color:#F6EFF1;position:relative;overflow:hidden}
+.cta::after{
+  content:"";position:absolute;inset-inline-start:-140px;bottom:-180px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle at center, rgba(148,48,74,.55), transparent 68%);
+}
+.cta-inner{position:relative;z-index:1}
+.cta h2{font-size:clamp(1.9rem,5vw,3rem);margin-bottom:20px}
+.cta p{color:#D8C9CE;max-width:50ch}
+.cta-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.cta-hint{margin-top:26px;font-size:.85rem;color:#B6A4AB}
+
+/* ---------- التذييل ---------- */
+.site-foot{border-top:1px solid var(--line);padding-block:40px;font-size:.9rem;color:var(--ink-2)}
+.foot-row{display:flex;flex-wrap:wrap;gap:18px 34px;align-items:center;justify-content:space-between}
+.foot-nav{display:flex;flex-wrap:wrap;gap:20px}
+.foot-nav a{text-decoration:none;transition:color .25s ease}
+.foot-nav a:hover{color:var(--garnet)}
+
+/* ---------- زر واتساب عائم ---------- */
+.wa-float{
+  position:fixed;inset-inline-end:18px;bottom:18px;z-index:50;
+  width:56px;height:56px;border-radius:50%;
+  background:var(--wa);color:#fff;
+  display:grid;place-items:center;
+  box-shadow:0 10px 30px rgba(36,26,43,.22);
+  transition:transform .25s ease;
+}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:27px;height:27px}
+
+/* ---------- حركة الدخول ---------- */
+.rise{opacity:0;transform:translateY(18px)}
+.loaded .rise{animation:rise .9s cubic-bezier(.2,.7,.25,1) both;animation-delay:var(--d,0s)}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* دخول من اليمين ومن اليسار */
+.in-right{opacity:0;transform:translateX(46px)}
+.loaded .in-right{animation:inRight 3.2s cubic-bezier(.2,.7,.25,1) both;animation-delay:var(--d,0s)}
+@keyframes inRight{from{opacity:0;transform:translateX(46px)}to{opacity:1;transform:none}}
+
+.in-left{opacity:0;transform:translateX(-46px)}
+.loaded .in-left{animation:inLeft 3.2s cubic-bezier(.2,.7,.25,1) both;animation-delay:var(--d,0s)}
+@keyframes inLeft{from{opacity:0;transform:translateX(-46px)}to{opacity:1;transform:none}}
+.reveal-on-scroll{opacity:0;transform:translateY(22px);transition:opacity .8s ease, transform .8s cubic-bezier(.2,.7,.25,1)}
+.reveal-on-scroll.in{opacity:1;transform:none}
+
+/* ---------- الشاشات الأكبر ---------- */
+@media (min-width:720px){
+  .env-solo img{aspect-ratio:16/10}
+  .why-grid{grid-template-columns:1fr 1fr;gap:44px}
+  .courses-grid{grid-template-columns:repeat(3,1fr);gap:22px}
+  .quotes{grid-template-columns:repeat(3,1fr)}
+  .service{grid-template-columns:minmax(190px,.9fr) 2fr;align-items:start}
+}
+@media (min-width:960px){
+  .nav{display:flex}
+  .about-grid{grid-template-columns:.9fr 1.1fr}
+
+  .hero-cover{min-height:700px;min-height:clamp(680px,90svh,940px)}
+  .hero-cover img{object-position:54% 26%}
+  .hero-cover h1{max-width:15ch}
+  .wa-float{inset-inline-end:26px;bottom:26px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .rise,.in-right,.in-left,.reveal-on-scroll{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     ✦ مكان واحد لتعديل رقم الواتساب: غيّري القيمة أدناه فقط
+     ========================================================= -->
+
+<header class="site-head" id="siteHead">
+  <div class="shell head-row">
+    <a class="brand" href="#top">
+      <span class="brand-name">أم رؤى</span>
+      <span class="brand-tag">دروس خصوصية للطالبات</span>
+    </a>
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#about">عن أم رؤى</a>
+      <a href="#services">المسارات</a>
+      <a href="#why">لماذا نحن</a>
+      <a href="#faq">أسئلة شائعة</a>
+    </nav>
+    <a class="btn btn-main btn-sm js-wa" href="#contact">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.34-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.7-2.01.95-2.29.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+      واتساب
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============== الواجهة ============== -->
+  <section class="section hero">
+    <div class="hero-cover">
+      <!-- لتغيير صورة الغلاف: استبدلي الرابط في السطر التالي فقط -->
+      <img src="https://images.unsplash.com/photo-1747778148316-4a8eeb132d48?auto=format&fit=crop&w=1600&q=80"
+           alt="معلمة محجبة تحمل كتابًا في جو دراسي هادئ" fetchpriority="high">
+
+      <span class="hero-badge rise" style="--d:.85s">خبرة 30 عامًا في التدريس</span>
+
+      <div class="hero-inner">
+        <p class="kicker rise" style="--d:.15s">دروس خصوصية للطالبات وفق المنهج السعودي</p>
+        <h1 class="in-right" style="--d:.28s" aria-label="مع أم رؤى، الفهم أولًا، والتميّز نتيجة">مع أم رؤى... الفهــــم أولًا، والتميّــــز نتيجة</h1>
+        <div class="hero-actions in-left" style="--d:.7s">
+          <a class="btn btn-light js-wa" href="#contact">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.34-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.7-2.01.95-2.29.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+            تواصلي عبر الواتساب
+          </a>
+          <a class="btn btn-outline-light" href="#services">تصفّحي المسارات</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell">
+      <div class="tracks-strip">
+        <span>المرحلة المتوسطة</span>
+        <span>المرحلة الثانوية</span>
+        <span>القدرات</span>
+        <span>التحصيلي</span>
+        <span>مواد جامعية مختارة</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== عن أم رؤى ============== -->
+  <section class="section" id="about">
+    <div class="shell about-grid">
+      <div class="arch about-media reveal-on-scroll">
+        <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=900&q=80"
+             alt="يد تكتب ملاحظات في دفتر أثناء المذاكرة" loading="lazy">
+      </div>
+
+      <div class="about-text reveal-on-scroll">
+        <div class="sec-head">
+          <h2>عن أم رؤى</h2>
+          <p>معلمة خاصة للطالبات، في المرحلتين المتوسطة والثانوية ومسارات القدرات والتحصيلي.</p>
+        </div>
+        <p class="years">خبرة 30 عامًا في التدريس</p>
+        <p>
+          ثلاثون عامًا علّمتها أن أغلب التعثّر ليس ضعف قدرة، بل شرحًا لم يصل بالطريقة المناسبة.
+          لذلك تبدأ الحصة من النقطة التي توقّف عندها الفهم، ثم تُبنى فوقها.
+        </p>
+
+        <ul class="pillars">
+          <li><b>تحديد المستوى قبل البدء</b><span>نعرف نقطة الانطلاق بدقة، فلا يضيع وقت في المعروف.</span></li>
+          <li><b>لغة بسيطة</b><span>شرح بمفردات الطالبة، ثم بمصطلحات المنهج.</span></li>
+          <li><b>تدرّج محسوب</b><span>لا ننتقل لمهارة جديدة قبل إتقان ما قبلها.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== المسارات ============== -->
+  <section class="section" id="services">
+    <div class="shell">
+      <div class="sec-head reveal-on-scroll">
+        <h2>المسارات التي ندرّسها</h2>
+        <p>خمسة مسارات واضحة، لكل واحد منها طريقة عمل مختلفة تناسب هدفه.</p>
+      </div>
+
+      <div class="services reveal-on-scroll">
+        <article class="service">
+          <h3>المرحلة المتوسطة</h3>
+          <div>
+            <p>تأسيس قوي في الرياضيات والعلوم واللغات، مع سدّ الفجوات المتراكمة من السنوات السابقة قبل أن تكبر وتؤثر على الثانوية.</p>
+          </div>
+        </article>
+
+        <article class="service">
+          <h3>المرحلة الثانوية</h3>
+          <div>
+            <p>شرح مركّز للمقررات، وحل نماذج وتمارين على نمط اختبارات المدرسة، مع خطة مراجعة لكل فترة دراسية.</p>
+          </div>
+        </article>
+
+        <article class="service">
+          <h3>اختبار القدرات</h3>
+          <div>
+            <p>تدريب على القسمين الكمي واللفظي بأنماط الأسئلة المتكررة، مع مهارات إدارة الوقت وطريقة الاستبعاد الذكي داخل الاختبار.</p>
+          </div>
+        </article>
+
+        <article class="service">
+          <h3>الاختبار التحصيلي</h3>
+          <div>
+            <p>مراجعة مكثّفة لمقررات الثانوية بالتركيز على الموضوعات الأكثر تكرارًا، وربط المعلومات بدل حفظها منفصلة.</p>
+          </div>
+        </article>
+
+        <article class="service">
+          <h3>مواد جامعية مختارة</h3>
+          <div>
+            <p>دعم في مواد أساسية محددة للسنوات الأولى الجامعية.</p>
+            <p class="service-note">يُرجى الاستفسار عن المادة قبل الحجز للتأكد من توفرها.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== حصص ودورات جاهزة ============== -->
+  <section class="section courses" id="courses">
+    <div class="shell">
+      <div class="sec-head reveal-on-scroll">
+        <h2>حصص ودورات جاهزة</h2>
+        <p>حصص مشروحة مسبقًا يمكنك طلبها والاستفادة منها في أي وقت.</p>
+      </div>
+
+      <div class="courses-grid reveal-on-scroll">
+        <article class="course">
+          <h3>[اسم الحصة أو الدورة]</h3>
+          <p>[وصف قصير جدًا]</p>
+          <a class="btn btn-ghost btn-sm js-wa" href="#contact">طلب الحصة</a>
+        </article>
+        <article class="course">
+          <h3>[اسم الحصة أو الدورة]</h3>
+          <p>[وصف قصير جدًا]</p>
+          <a class="btn btn-ghost btn-sm js-wa" href="#contact">طلب الحصة</a>
+        </article>
+        <article class="course">
+          <h3>[اسم الحصة أو الدورة]</h3>
+          <p>[وصف قصير جدًا]</p>
+          <a class="btn btn-ghost btn-sm js-wa" href="#contact">طلب الحصة</a>
+        </article>
+      </div>
+
+      <div class="courses-cta reveal-on-scroll">
+        <a class="btn btn-main js-wa" href="#contact">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.34-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.7-2.01.95-2.29.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+          اطلبي الحصص الآن
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== لماذا أم رؤى ============== -->
+  <section class="section why" id="why">
+    <div class="shell">
+      <div class="sec-head reveal-on-scroll">
+        <h2>لماذا تختارين أم رؤى</h2>
+        <p>أربعة فروق عملية تلاحظها الطالبة من الحصة الأولى.</p>
+      </div>
+
+      <div class="why-grid reveal-on-scroll">
+        <div class="why-item">
+          <h3>انتباه فردي كامل</h3>
+          <p>الحصة لطالبة واحدة. لا مزاحمة على السؤال، ولا انتقال للدرس التالي قبل أن يتضح الحالي.</p>
+        </div>
+        <div class="why-item">
+          <h3>الفهم قبل الدرجة</h3>
+          <p>الدرجة نتيجة طبيعية للفهم. نبدأ من الأساس المفقود، ثم نتدرب على أسلوب الاختبار.</p>
+        </div>
+        <div class="why-item">
+          <h3>بيئة نسائية مطمئنة</h3>
+          <p>مساحة هادئة وخاصة للطالبات، تشعر فيها الطالبة بالراحة لتسأل وتكرر السؤال بلا حرج.</p>
+        </div>
+        <div class="why-item">
+          <h3>خطة مكتوبة ومتابعة</h3>
+          <p>تقييم في البداية، خطة أسبوعية واضحة، وتحديث قصير لولية الأمر عن مستوى التقدم.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== بيئة الدراسة ============== -->
+  <section class="section" id="environment">
+    <div class="shell">
+      <div class="arch env-solo reveal-on-scroll">
+        <img src="https://images.pexels.com/photos/6908500/pexels-photo-6908500.jpeg?auto=compress&cs=tinysrgb&w=1600"
+             alt="مجلس منزلي هادئ وأنيق تُقام فيه الحصص" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== آراء (نماذج مبدئية) ============== -->
+  <section class="section" id="testimonials">
+    <div class="shell">
+      <div class="sec-head reveal-on-scroll">
+        <h2>ما تقوله الطالبات</h2>
+      </div>
+
+      <div class="quotes reveal-on-scroll">
+        <!-- استبدلي هذه النماذج بآراء حقيقية بعد الحصول على إذن أصحابها -->
+        <blockquote class="quote">
+          <p>[نص رأي قصير عن تحسّن الفهم في مادة معينة.]</p>
+          <cite>طالبة — المرحلة الثانوية · نموذج مبدئي</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>[نص رأي قصير من ولية أمر عن الالتزام والمتابعة.]</p>
+          <cite>ولية أمر · نموذج مبدئي</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <p>[نص رأي قصير عن التحضير لاختبار القدرات.]</p>
+          <cite>طالبة — مسار القدرات · نموذج مبدئي</cite>
+        </blockquote>
+      </div>
+
+      <p class="quotes-note">هذه نماذج مؤقتة لتوضيح الشكل، وستُستبدل بآراء حقيقية.</p>
+    </div>
+  </section>
+
+  <!-- ============== الأسئلة الشائعة ============== -->
+  <section class="section" id="faq">
+    <div class="shell">
+      <div class="sec-head reveal-on-scroll">
+        <h2>أسئلة شائعة</h2>
+      </div>
+
+      <div class="faq reveal-on-scroll">
+        <details>
+          <summary>كيف تبدأ أول حصة؟</summary>
+          <div class="faq-body">بحصة تعارف قصيرة نحدّد فيها مستوى الطالبة الحالي، ونتفق على المادة والهدف وخطة البداية.</div>
+        </details>
+        <details>
+          <summary>هل الحصص حضورية أم عن بُعد؟</summary>
+          <div class="faq-body">[يُحدَّد لاحقًا — أضيفي هنا نمط الحصص المتاح.]</div>
+        </details>
+        <details>
+          <summary>كم مدة الحصة وعددها في الأسبوع؟</summary>
+          <div class="faq-body">[يُحدَّد لاحقًا — أضيفي هنا مدة الحصة وعدد الحصص المقترح لكل مسار.]</div>
+        </details>
+        <details>
+          <summary>ما هي الأسعار؟</summary>
+          <div class="faq-body">تختلف حسب المسار وعدد الحصص. تفاصيل الأسعار تُرسل عند التواصل عبر الواتساب.</div>
+        </details>
+        <details>
+          <summary>هل الدروس للطالبات فقط؟</summary>
+          <div class="faq-body">نعم، الحصص مخصصة للطالبات فقط.</div>
+        </details>
+        <details>
+          <summary>ماذا لو كانت المادة غير مذكورة في المسارات؟</summary>
+          <div class="faq-body">تواصلي واذكري اسم المادة والمرحلة، وسنوضح إن كانت متاحة.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== الدعوة للتواصل ============== -->
+  <section class="section cta" id="contact">
+    <div class="shell cta-inner">
+      <div class="reveal-on-scroll measure">
+        <h2>ابدئي بحصة تعارف</h2>
+        <p>أرسلي رسالة واحدة تذكرين فيها: المرحلة، المادة، والوقت المناسب — ونرتّب لك البداية.</p>
+        <div class="cta-actions">
+          <a class="btn btn-light js-wa" href="#">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.34-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.7-2.01.95-2.29.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+            فتح محادثة واتساب
+          </a>
+        </div>
+        <p class="cta-hint">[أوقات الرد: تُحدَّد لاحقًا]</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="shell foot-row">
+    <div>
+      <span class="brand-name" style="font-size:1.15rem">أم رؤى</span>
+      <span> — دروس خصوصية للطالبات</span>
+    </div>
+    <nav class="foot-nav" aria-label="روابط التذييل">
+      <a href="#about">عن أم رؤى</a>
+      <a href="#services">المسارات</a>
+      <a href="#faq">أسئلة شائعة</a>
+      <a href="#contact" class="js-wa">واتساب</a>
+    </nav>
+    <div>© <span id="year"></span> جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" href="#contact" aria-label="تواصلي عبر الواتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.9 9.9 0 0 0 4.84 1.24h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.34-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.12-.14-.18-1.12-1.49-1.12-2.84 0-1.35.7-2.01.95-2.29.25-.28.55-.35.73-.35h.52c.17 0 .4-.06.62.48.24.57.8 1.97.87 2.11.07.14.11.31.02.49-.09.18-.14.29-.27.45-.14.16-.29.36-.41.48-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.93 1.93 1.22 2.21 1.36.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.37-.23.62-.14.25.09 1.6.76 1.87.9.28.14.46.21.53.32.07.12.07.66-.17 1.34Z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   1) رقم الواتساب — عدّلي هذا السطر فقط
+   الصيغة: رمز الدولة + الرقم بدون صفر وبدون رموز
+   ============================================================ */
+const WHATSAPP_NUMBER = "966508907018";            // ← رقم الواتساب
+const WHATSAPP_TEXT   = "السلام عليكم، أرغب بالاستفسار عن الحصص الخاصة.";
+
+(function () {
+  const ready = !/X/.test(WHATSAPP_NUMBER);
+  const link  = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WHATSAPP_TEXT);
+
+  document.querySelectorAll(".js-wa").forEach(function (el) {
+    if (ready) {
+      el.setAttribute("href", link);
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener");
+    } else {
+      el.setAttribute("href", "#contact");   // قبل إضافة الرقم: ينتقل لقسم التواصل
+    }
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // حركة دخول الواجهة
+  requestAnimationFrame(function () { document.body.classList.add("loaded"); });
+
+  // حدّ رفيع أسفل الترويسة عند النزول
+  const head = document.getElementById("siteHead");
+  const onScroll = function () {
+    head.dataset.stuck = window.scrollY > 12 ? "true" : "false";
+  };
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // ظهور تدريجي للأقسام
+  const items = document.querySelectorAll(".reveal-on-scroll");
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -60px" });
+    items.forEach(function (el) { io.observe(el); });
+  } else {
+    items.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  // فتح سؤال واحد فقط في كل مرة
+  const all = document.querySelectorAll(".faq details");
+  all.forEach(function (d) {
+    d.addEventListener("toggle", function () {
+      if (d.open) all.forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+})();
+</script>
+</body>
+</html>
